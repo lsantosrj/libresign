@@ -392,6 +392,7 @@ class AccountController extends ApiController {
 		}
 		return new JSONResponse(
 			[
+				// This messages display when a visible element was deleted. A visible element is for example an image of signature, a text when the file was signed or the types of elements.
 				'message' => $this->l10n->t('Visible element deleted')
 			],
 			Http::STATUS_OK
